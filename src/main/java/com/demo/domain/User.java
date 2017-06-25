@@ -12,6 +12,7 @@ public class User implements Serializable {
 	private String email;
 	private String nickName;
 	private String regTime;
+	private Enum userSex;
 
 	public User() {
 		super();
@@ -60,5 +61,10 @@ public class User implements Serializable {
 	public void setRegTime(String regTime) {
 		this.regTime = regTime;
 	}
-
+	public Enum<?> getUserSex() {
+		return userSex;
+	}
+	public void setUserSex(Enum<?> userSex) {
+		this.userSex = userSex;
+	}
 }
